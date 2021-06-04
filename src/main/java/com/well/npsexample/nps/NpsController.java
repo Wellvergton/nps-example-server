@@ -1,7 +1,7 @@
 package com.well.npsexample.nps;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrosOrigin;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/nps")
-@CrosOrigin(origin = "https://nps-example.web.app/")
+@CrossOrigin(origin = "https://nps-example.web.app/")
 public class NpsController {
 
   @Autowired
