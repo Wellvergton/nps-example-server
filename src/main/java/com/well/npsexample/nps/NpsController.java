@@ -16,7 +16,7 @@ public class NpsController {
   @Autowired
   private NpsRepository npsRepository;
   
-  @CrossOrigin(origin = "https://nps-example.web.app/")
+  @CrossOrigin(origins = "https://nps-example.web.app/")
   @GetMapping(path = "/all")
   public @ResponseBody Iterable<Nps> getAllNps() {
     return npsRepository.findAll();
