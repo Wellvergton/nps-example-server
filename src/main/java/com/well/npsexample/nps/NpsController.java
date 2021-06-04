@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origin = "https://nps-example.web.app/")
 @RestController
 @RequestMapping("/nps")
 public class NpsController {
@@ -17,6 +16,7 @@ public class NpsController {
   @Autowired
   private NpsRepository npsRepository;
   
+  @CrossOrigin(origin = "https://nps-example.web.app/")
   @GetMapping(path = "/all")
   public @ResponseBody Iterable<Nps> getAllNps() {
     return npsRepository.findAll();
