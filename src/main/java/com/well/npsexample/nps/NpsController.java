@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origin = "https://nps-example.web.app/")
 @RestController
 @RequestMapping("/nps")
-@CrossOrigin(origin = "https://nps-example.web.app/")
 public class NpsController {
 
   @Autowired
